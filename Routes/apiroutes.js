@@ -12,7 +12,7 @@ const editNote = (updatedNotesArray) => {
 
   // GET  pull existing notes
   router.get("/notes", (req, res) => {
-    fs.readFile("db/db.json", "UTF-8", (err, data) => {
+    fs.readFile("db/db.json", "utf8", (err, data) => {
       if (err) throw err; 
       res.json(JSON.parse(data));
     });
@@ -21,7 +21,7 @@ const editNote = (updatedNotesArray) => {
   // POST user notes to DB
   router.post("/notes", (req, res) => {
     const newNote = req.body;
-    fs.readFile("db/db.json", "UTF8", (err, data) => {
+    fs.readFile("db/db.json", "utf8", (err, data) => {
       if (err) throw err;
       const notesArr = JSON.parse(data);
       const uniqueRandomID = uuid.v4();

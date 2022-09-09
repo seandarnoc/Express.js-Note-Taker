@@ -1,16 +1,30 @@
 {
-  "name": "note-taker",
+  "name": "express.js-note-taker",
   "version": "1.0.0",
-  "description": "",
+  "description": "NoteTakerapp",
   "main": "server.js",
   "scripts": {
-    "test": "x",
+    "test": "node server.js",
     "start": "node server.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seandarnoc/Express.js-Note-Taker.git"
+  },
+  "keywords": [
+    "seandarnoc/Expres.js-Note-Taker"
+  ],
+  "author": "SeanConrad",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seandarnoc/Express.js-Note-Taker/issues"
+  },
+  "homepage": "https://github.com/seandarnoc/Express.js-Note-Taker#readme",
   "dependencies": {
+    "bootstrap": "^5.2.1",
     "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "util": "^0.12.4",
     "uuid": "^9.0.0"
   }
 }
