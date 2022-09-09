@@ -11,7 +11,7 @@ const editNote = (updatedNotesArray) => {
 
 
   // GET  pull existing notes
-  router.get("/notes", (req, res) => {
+  router.get("/", (req, res) => {
     fs.readFile("db/db.json", "utf8", (err, data) => {
       if (err) throw err; 
       res.json(JSON.parse(data));
