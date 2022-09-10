@@ -10,7 +10,7 @@ const editNote = (updatedNotesArray) => {
 };
 
 
-  // GET  pull existing notes
+
   router.get("/notes", (req, res) => {
     fs.readFile("db/db.json", "utf8", (err, data) => {
       if (err) throw err; 
@@ -18,7 +18,7 @@ const editNote = (updatedNotesArray) => {
     });
   });
 
-  // POST user notes to DB
+
   router.post("/notes", (req, res) => {
     const newNote = req.body;
     fs.readFile("db/db.json", "utf8", (err, data) => {
@@ -35,7 +35,7 @@ const editNote = (updatedNotesArray) => {
     });
   });
 
-  // DELETE user note via unique ID
+
   router.delete("/notes/:id", (req, res) => {
     const deleteId = req.params.id;
     fs.readFile("db/db.json", "utf8", (err, data) => {
