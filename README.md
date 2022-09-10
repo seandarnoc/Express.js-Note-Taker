@@ -16,3 +16,7 @@ Node
 UUID
 
 # About Me
+github.com/seandarnoc 
+
+# Links
+deployed app: https://seandarnoc-notetaker.herokuapp.com/ 
