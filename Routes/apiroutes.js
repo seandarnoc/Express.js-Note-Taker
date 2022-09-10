@@ -1,7 +1,8 @@
 const router = require ('express').Router();
+const fs = require("fs");
 const uuid = require('uuid');
 
-const fs = require("fs");
+
 
 const editNote = (updatedNotesArray) => {
   fs.writeFile("db/db.json", JSON.stringify(updatedNotesArray), (err) => {
@@ -11,7 +12,7 @@ const editNote = (updatedNotesArray) => {
 
 
   // GET  pull existing notes
-  router.get("/", (req, res) => {
+  router.get("/notes", (req, res) => {
     fs.readFile("db/db.json", "utf8", (err, data) => {
       if (err) throw err; 
       res.json(JSON.parse(data));
