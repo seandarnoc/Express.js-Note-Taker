@@ -3,8 +3,8 @@ const fs = require("fs");
 
 const app = express();
 
-const apiRoutes = require('./routes/api/apiRoutes.js');
-const htmlRoutes = require('./routes/html/htmlRoutes.js');
+const apiRoutes = require("./routes/api/apiRoutes.js");
+const htmlRoutes = require("/routes/html/htmlRoutes.js");
 
 const PORT = process.env.port || 3001;
 

@@ -1,8 +1,7 @@
 const router = require ('express').Router();
-const fs = require("fs");
 const uuid = require('uuid');
 
-
+const fs = require("fs");
 
 const editNote = (updatedNotesArray) => {
   fs.writeFile("db/db.json", JSON.stringify(updatedNotesArray), (err) => {
