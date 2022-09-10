@@ -1,6 +1,5 @@
 const router = require ('express').Router();
 const uuid = require('uuid');
-
 const fs = require("fs");
 
 const editNote = (updatedNotesArray) => {
