@@ -1,0 +1,25 @@
+{
+  "name": "express.js-note-taker",
+  "version": "1.0.0",
+  "description": "Express\r Node\r UUID",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seandarnoc/Express.js-Note-Taker.git"
+  },
+  "author": "Sean Conrad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seandarnoc/Express.js-Note-Taker/issues"
+  },
+  "homepage": "https://github.com/seandarnoc/Express.js-Note-Taker#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "fs": "^0.0.1-security",
+    "uuidv4": "^6.2.13"
+  }
+}
